@@ -7,7 +7,7 @@ const Header = () => {
     <div style={{ padding: '40px' }}>
       {auth.userData ? (
         <>
-          <h3>Logged in as {auth.userData?.profile.given_name} 🎉</h3>
+          <h3>Logged in as {auth.userData?.profile.email} 🎉</h3>
           <button onClick={() => auth.signOutRedirect({ id_token_hint: auth.userData?.id_token })}>Log out!</button>
         </>
       ) : (
